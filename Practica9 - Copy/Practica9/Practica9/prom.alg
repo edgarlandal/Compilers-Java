@@ -1,0 +1,23 @@
+inicio-programa
+	variables enteras: i, n
+	variables flotantes: cal, prom
+
+	leer "Cuantas calificaciones", n
+	prom = 0
+	
+	i = 0
+	
+	repite (i = 0, n)
+		leer "Da una calificacion", cal
+		prom = prom + cal
+	fin-repite
+	prom = prom / n
+	
+	si (prom > 5) entonces
+		escribir "Aprobado con: ", prom
+	fin-si
+
+	si (prom == 10) entonces
+		escribir "Excelente"
+	fin-si
+fin-programa
